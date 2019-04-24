@@ -1,0 +1,354 @@
+/* CSS for common styles for all HTML and Body sections */
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+/* General CSS Classes */
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Using rem standard to compare all elements to the root element size */
+.site-container {
+  width: 90rem;
+  margin: 0px auto;
+}
+
+/* CSS for Header Section */
+.PageHeader {
+  height: 57rem;
+
+}
+
+/* CSS for Banner in Header Section */
+.PageHeader-banner {
+  width: 100%;
+  height: 50rem;
+  background-image: url("../images/mountains.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.PageHeader-banner h1 {
+  font-size: 4.2rem;
+  display: flex;
+  color: #eeeeee;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  width: 48rem;
+}
+
+.PageHeader-banner p {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 1.5rem;
+  width: 46rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 200;
+  margin-top: 2.75rem;
+  font-family: Lato;
+}
+
+/* Media queries to make banner section responsive */
+
+@media only screen and (max-width: 1024px) {
+  .PageHeader-banner {
+    height: 45rem;
+  }
+  .PageHeader-banner h1 {
+    width: 100%;
+    font-size: 3.3rem;;
+  }
+
+  .PageHeader-banner p {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .PageHeader-banner {
+    height: 30rem;
+  }
+
+  .PageHeader-banner h1 {
+    width: 100%;
+    font-size: 2rem;;
+  }
+
+  .PageHeader-banner p {
+    display: none;
+  }
+}
+
+/* CSS for Header Logo Section */
+.PageHeader-nav-section {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #DCDCDC;
+  height: 6.2rem;
+  width: 100%;
+}
+
+.PageHeader-logo {
+  /*width: 11rem;
+  border-right: 1.5px solid #DCDCDC;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: 1.5px solid #DCDCDC;
+  height: 100%;
+  padding-left: 0.9rem;
+  padding-right: 1rem;
+}
+
+/* CSS for Header Nav Section */
+.PageHeader-nav {
+  /*padding-left: 49rem;
+  padding-right: 2rem;*/
+  display: flex;
+  margin-right: 1.5rem;
+  justify-content: flex-end;
+  width: 100%;
+}
+.PageHeader-nav a {
+  text-decoration: none;
+  text-align: left;
+  color: #444444;
+  font-size: 0.8rem;
+  padding-left: 1.2rem;
+}
+
+.PageHeader-search {
+  width: 5.5rem;
+  display: flex;
+  align-items: center;
+  border-left: 1.5px solid #DCDCDC;
+  height: 100%;
+  justify-content: center;
+  text-align: right;
+}
+
+.PageHeader-search img {
+  object-fit: contain;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .PageHeader-nav {
+    justify-content: center;
+  }
+
+  .PageHeader-search {
+    /*display: none;*/
+    justify-content: center;
+  }
+}
+/* CSS for Company HighLights Section*/
+
+.company-highlight-image img{
+  background-color: green;
+}
+
+
+.rectangle {
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: black;
+}
+
+.col-md-3 {
+
+}
+
+.btn {
+  color: black;
+  width: 100%;
+  text-align: left;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+}
+
+.team-member {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+/* CSS section for Services section */
+.heart-bg {
+  width: 100px;
+  height: 100px;
+  background-color: #20B2AA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.heart-img {
+  width: 2.6rem;
+  height: 2.2rem;
+  color: #ffffff;
+}
+
+/* CSS Section for Divider Section */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle-long {
+  width: 6.2rem;
+  height: 0.07rem;
+  background-color: #eeeeee;
+}
+
+.elipse {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+
+/* CSS Section for Contact Us Section */
+.contact-info {
+}
+
+/* CSS for Footer Section */
+.pageFooter .site-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8.8rem;
+  background-color: #333333;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.copyright-and-terms {
+  margin-left: 9.1rem;
+  color: #696969;
+  font-weight: normal;
+  text-align: left;
+  font-family: Lato;
+  font-size: 1rem;
+}
+
+.copyright {
+  padding-bottom: 0.8rem;
+
+}
+
+.social-media-links-and-email {
+  margin-right: 10rem;
+  color: #696969;
+  font-weight: normal;
+  text-align: left;
+  font-family: Lato;
+  font-size: 1rem;
+}
+
+.footer-contact-links i {
+  padding-left: 1rem;
+  padding-bottom: 1.1rem;
+  text-align: right;
+}
+
+.footer-contact-links a {
+  color: #696969;
+  text-decoration: none;
+}
+
+.email-section {
+  text-align: right;
+}
+
+/* Media Queries to Set Footer for responsive design*/
+
+@media only screen and (max-width: 1024px) {
+  .pageFooter .site-container {
+
+
+  }
+
+  .copyright-and-terms {
+    margin: 0 auto;
+  }
+
+  .social-media-links-and-email {
+    margin: 0 auto;
+  }
+
+  .github-icon {
+    display: none;
+  }
+
+  .vimeo-square-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .pageFooter .site-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .copyright-and-terms {
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .footer-contact-links {
+    display: none;
+  }
+
+  .terms {
+    display: none;
+  }
+
+  .email-section {
+    text-align: left;
+    width: 100%;
+    margin-right: 0rem;
+  }
+
+}
