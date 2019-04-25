@@ -17,6 +17,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <!-- Linking style sheets -->
     <link rel="stylesheet" href="./assets/styles/reset.css" type="text/css">
     <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
@@ -47,19 +50,20 @@
 
           <!-- Nav Section -->
           <nav class="PageHeader-nav uppercase bold">
-            <span><a href="#Home">Home</a></span>
-            <span><a href="#">Our Work</a></span>
-            <span><a href="#">Our Team</a></span>
-            <span><a href="#">Services</a></span>
-            <span><a href="#">Contact Us</a></span>
+            <span><a href="index.html" class="link-home">Home</a></span>
+            <span><a href="#works" class="link-work">Work</a></span>
+            <span><a href="#team" class="link-team">Team</a></span>
+            <span><a href="#services" class="link-services">Services</a></span>
+            <span><a href="#contact" class="link-contact">Contact Us</a></span>
           </nav>
 
+          <!-- Nav section for smaller screens. Only visible when device has small screen or
+            when scaling to smaller screen -->
           <nav class="mobile">
-            <span><a href="#Home">Home</a></span>
-            <span><a href="#">Our Work</a></span>
-            <span><a href="#">Our Team</a></span>
-            <span><a href="#">Services</a></span>
-            <span><a href="#">Contact Us</a></span>
+            <a href="index.html"><i class="fa fa-home fa-lg"></i></a>
+            <a href="#works"><i class="fa fa-briefcase"></i></a>
+            <a href="#team"><i class="fa fa-users"></i></a>
+            <a href="#contact"><i class="fa fa-envelope"></i></a>
           </nav>
 
           <!-- Search Image Section -->
@@ -69,163 +73,203 @@
 
         </div>
 
-    <!--  </div>-->
-
     </header>
 
-    <body>
-
-      <div class="company-highlights">
+    <div class="main">
+      <!-- Contains all the information about why someone would choose the company -->
+      <div class="company-highlights-section">
         <div class="site-container">
 
           <!-- Section Header -->
-          <h2>Why Choose Us</h2>
+          <h2 class="uppercase bold section-heading-Raleway">Why Choose Us</h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="section-p-Lato">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-          <!-- Sections divided into equal sections to be placed using FlexBox -->
-          <!-- Section holds reasons why a client might choose the company -->
-          <div class="company-highlight">
-            <div class="company-highlight-image">
-              <img src="assets/images/devices.png" alt="">
+          <div class="rectangle-2">
+
+          </div>
+
+          <div class="company-highlights">
+            <!-- Sections divided into equal sections to be placed using FlexBox -->
+            <!-- Section holds reasons why a client might choose the company -->
+            <div class="company-highlight">
+              <div class="company-highlight-image">
+                <img src="assets/images/devices.png" alt="">
+              </div>
+              <div class="company-highlight-headers">
+                <h3 class="bold major-heading">Why Choose Us</h3>
+                <h3 class="minor-heading">OpenSource Platforms</h3>
+              </div>
+              <div class="company-highlight-paragraph">
+                <p>OpenSource platforms processing billions of queries daily
+                  maintaining a max response time of <80ms.</p>
+              </div>
             </div>
-            <div class="company-highlight-headers">
-              <h3 class="major-heading">Why Choose Us</h3>
-              <h3 class="minor-heading">OpenSource Platforms</h3>
+
+            <div class="company-highlight">
+              <div class="company-highlight-image">
+                <img src="assets/images/databot.png" alt="">
+              </div>
+              <div class="company-highlight-headers">
+                <h3 class="bold major-heading">Why Choose Us</h3>
+                <h3 class="minor-heading">DataBots360</h3>
+              </div>
+              <div class="company-highlight-paragraph">
+                <p>CoFounder of the next big leap in Robotic Process Automation.</p>
+              </div>
             </div>
-            <div class="company-highlight-paragraph">
-              <p>OpenSource platforms processing billions of queries daily while
-                maintaining a maximum response time of <80ms.</p>
+
+            <div class="company-highlight">
+              <div class="company-highlight-image">
+                <img src="assets/images/pc.png" alt="">
+              </div>
+              <div class="company-highlight-headers">
+                <h3 class="bold major-heading">Why Choose Us</h3>
+                <h3 class="minor-heading">BrightSpot CMS Partner</h3>
+              </div>
+              <div class="company-highlight-paragraph">
+                <p>DevEire has deployed over 60 digital experiences on Brightspot to date.</p>
+              </div>
             </div>
           </div>
 
-          <div class="company-highlight">
-            <div class="company-highlight-image">
-              <img src="assets/images/databot.png" alt="">
-            </div>
-            <div class="company-highlight-headers">
-              <h3 class="major-heading">Why Choose Us</h3>
-              <h3 class="minor-heading">DataBots360</h3>
-            </div>
-            <div class="-company-highlight-paragraph">
-              <p>CoFounder of the next big leap in Robotic Process Automation.</p>
-            </div>
-          </div>
-
-          <div class="company-highlight">
-            <div class="company-highlight-image">
-              <img src="assets/images/pc.png" alt="">
-            </div>
-            <div class="company-highlight-headers">
-              <h3 class="major-heading">Why Choose Us</h3>
-              <h3 class="minor-heading">BrightSpot CMS Partner</h3>
-            </div>
-            <div class="-company-highlight-paragraph">
-              <p>DevEire has deployed over 60 digital experiences on Brightspot to date.</p>
-            </div>
-          </div>
         </div>
       </div>
 
+      <!-- Sections divided into categories to easily assign FlexBox -->
       <div class="company-highlights-2">
 
         <div class="site-container">
 
-          <div class="company-highlight-2">
-            <h2>846K</h2>
+          <div class="company-highlight-2 code">
+            <h2 class="bold">846K</h2>
 
             <div class="rectangle">
 
             </div>
 
-            <span>Lines of Code</span>
+            <span class="uppercase">Lines of Code</span>
           </div>
 
-          <div class="company-highlight-2">
-            <h2>21700</h2>
+          <div class="company-highlight-2 html-files">
+            <h2 class="bold">21700</h2>
 
             <div class="rectangle">
 
             </div>
 
-            <span>KBS of HTML Files</span>
+            <span class="uppercase">KBS of HTML Files</span>
           </div>
 
-          <div class="company-highlight-2">
-            <h2>408</h2>
+          <div class="company-highlight-2 templates">
+            <h2 class="bold">408</h2>
 
             <div class="rectangle">
 
             </div>
 
-            <span>No. of Templates</span>
+            <span class="uppercase">No. of Templates</span>
           </div>
 
-          <div class="company-highlight-2">
-            <h2>1400</h2>
+          <div class="company-highlight-2 hours">
+            <h2 class="bold">1400</h2>
 
             <div class="rectangle">
 
             </div>
 
-            <span>Hours of Coding</span>
+            <span class="uppercase">Hours of Coding</span>
           </div>
 
         </div>
       </div>
 
       <!-- Use of BootStrap to position Our works section -->
-      <div class="works">
+      <div id="works">
         <div class="site-container">
-          <h2>Our Works</h2>
+          <h2 class="bold uppercase section-heading-Raleway">Our Works</h2>
 
-          <p>Large number of projects spanning many different business types</p>
+          <p class="section-p-Lato">Large number of projects spanning many different business types</p>
+
+          <div class="rectangle-2">
+
+          </div>
+
+          <!-- BootStrap needs to include all content in container or fluid-container div -->
           <div class="container">
 
             <div class="row">
-              <div class="our-works col-md-3 col-xs-12">
-                <img src="assets/images/beach.jpg" alt="beach">
-                <h3>Last Minute Holidays</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/bikes.jpg" alt="bikes">
-                <h3>Bikes R Us</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/boohoo.jpg" alt="fashion site boohoo">
-                <h3>Boohoo</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+              <div class="our-works col-lg-3 col-md-6 col-xs-12 works-1">
+                <div class="piece-of-work">
+                  <img src="assets/images/beach.jpg" alt="beach">
+                  <h3>Last Minute Holidays</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/bikes.jpg" alt="bikes">
+                  <h3>Bikes R Us</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/boohoo.jpg" alt="fashion site boohoo">
+                  <h3>Boohoo</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+
               </div>
-              <div class="our-works col-md-3 col-xs-12">
-                <img src="assets/images/flower.jpg" alt="flower">
-                <h3>Flowers R Us</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/golf.jpg" alt="golf site">
-                <h3>Careys Golf Supplies</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/hotel.jpg" alt="hotel">
-                <h3>Perry Hotel</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+
+              <div class="our-works col-lg-3 col-md-6 col-xs-12 works-2">
+                <div class="piece-of-work">
+                  <img src="assets/images/flower.jpg" alt="flower">
+                  <h3>Flowers R Us</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/golf.jpg" alt="golf site">
+                  <h3>Careys Golf Supplies</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/hotel.jpg" alt="hotel">
+                  <h3>Perry Hotel</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
               </div>
-              <div class="our-works col-md-3 col-xs-12">
-                <img src="assets/images/pc_parts.jpg" alt="pc parts">
-                <h3>Toms PC Supplies</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/laptop.jpg" alt="picture of laptop">
-                <h3>Laptops R Us</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/dog.jpg" alt="picture of dog">
-                <h3>Pet Mania</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+
+              <div class="our-works col-lg-3 col-md-6 col-xs-12 works-3">
+                <div class="piece-of-work">
+                  <img src="assets/images/pc_parts.jpg" alt="pc parts">
+                  <h3>Toms PC Supplies</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/laptop.jpg" alt="picture of laptop">
+                  <h3>Laptops R Us</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/dog.jpg" alt="picture of dog">
+                  <h3>Pet Mania</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
               </div>
-              <div class="our-works col-md-3 col-xs-12">
-                <img src="assets/images/phone.jpg" alt="phone">
-                <h3>Vodafone</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/tablet.jpg" alt="tablet">
-                <h3>Tablet Store</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
-                <img src="assets/images/trialFinders.jpg" alt="landscape">
-                <h3>Trial Finders</h3>
-                <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+
+              <div class="our-works col-lg-3 col-md-6 col-xs-12 works-4">
+                <div class="piece-of-work">
+                  <img src="assets/images/phone.jpg" alt="phone">
+                  <h3>Vodafone</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/tablet.jpg" alt="tablet">
+                  <h3>Tablet Store</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
+                <div class="piece-of-work">
+                  <img src="assets/images/trialFinders.jpg" alt="landscape">
+                  <h3>Trial Finders</h3>
+                  <a href="#" class="btn btn-link disabled" role="button">Visit Website</a>
+                </div>
               </div>
             </div>
           </div>
@@ -233,60 +277,77 @@
       </div>
 
       <!-- Meet the Team Section -->
-      <div class="team">
+      <div id="team">
         <div class="site-container">
 
-          <h2>Our Team</h2>
+          <h2 class="bold uppercase section-heading-Raleway">Our Team</h2>
 
-          <p>Members of our Team</p>
+          <p class="section-p-Lato">Members of our Team</p>
+
+          <div class="rectangle-2">
+
+          </div>
 
           <div class="container">
             <div class="row">
 
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6 col-xs-12">
                 <div class="team-member">
                   <img src="assets/images/ceo.jpg" alt="CEO">
-                  <h3 class="member-name">Julia Jenkins</h3>
+                  <div class="personal-details">
+                    <h3 class="member-name bold uppercase">Julia Jenkins</h3>
+                    <span class="uppercase">CEO</span>
+                  </div>
                   <div class="member-contact-links">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-google-plus"></i>
+                    <a href=""><i class="fa fa-facebook elipse"></i></a>
+                    <a href=""><i class="fa fa-twitter elipse"></i></a>
+                    <a href=""><i class="fa fa-google-plus elipse"></i></a>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-3 col-md-2">
+              <div class="col-lg-3 col-md-6 col-xs-12">
                 <div class="team-member">
-                  <img src="assets/images/ceo.jpg" alt="CEO">
-                  <h3 class="member-name">Julia Jenkins</h3>
+                  <img src="assets/images/project-manager.jpg" alt="project manager picture">
+                  <div class="personal-details">
+                    <h3 class="member-name bold uppercase">Philip Ryan</h3>
+                    <span class="uppercase">Project Manager</span>
+                  </div>
                   <div class="member-contact-links">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-google-plus"></i>
+                    <a href=""><i class="fa fa-facebook elipse"></i></a>
+                    <a href=""><i class="fa fa-twitter elipse"></i></a>
+                    <a href=""><i class="fa fa-google-plus elipse"></i></a>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-3 col-md-2">
+              <div class="col-lg-3 col-md-6 col-xs-12">
                 <div class="team-member">
-                  <img src="assets/images/ceo.jpg" alt="CEO">
-                  <h3 class="member-name">Julia Jenkins</h3>
+                  <img src="assets/images/programmer.jpg" alt="Programmer Picture">
+                  <div class="personal-details">
+                    <h3 class="member-name bold uppercase">Lilly Walters</h3>
+                    <span class="uppercase">Programmer</span>
+                  </div>
                   <div class="member-contact-links">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-google-plus"></i>
+                    <a href=""><i class="fa fa-facebook elipse"></i></a>
+                    <a href=""><i class="fa fa-twitter elipse"></i></a>
+                    <a href=""><i class="fa fa-google-plus elipse"></i></a>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-3 col-md-2">
+              <div class="col-lg-3 col-md-6 col-xs-12">
                 <div class="team-member">
-                  <img src="assets/images/ceo.jpg" alt="CEO">
-                  <h3 class="member-name">Julia Jenkins</h3>
+                  <img src="assets/images/programmer2.jpg" alt="Programmer Picture">
+                  <div class="personal-details">
+                    <h3 class="member-name bold uppercase">Matilda Walsh</h3>
+                    <span class="uppercase">Programmer</span>
+                  </div>
+
                   <div class="member-contact-links">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-google-plus"></i>
+                    <a href=""><i class="fa fa-facebook elipse"></i></a>
+                    <a href=""><i class="fa fa-twitter elipse"></i></a>
+                    <a href=""><i class="fa fa-google-plus elipse"></i></a>
                   </div>
                 </div>
               </div>
@@ -297,104 +358,108 @@
         </div>
       </div>
 
+      <!-- The Quote Section -->
       <div class="quote-section">
         <div class="site-container">
-          <span class="quote">"Everything is designed, But some things are designed well."</span>
+          <span class="quote bold uppercase">"Everything is designed, But some things are designed well."</span>
         </div>
       </div>
 
-      <div class="services-section">
+      <!-- Services Section -->
+      <div id="services">
         <div class="site-container">
-          <h2>Services</h2>
-          <p>The services that we provide</p>
+          <h2 class="section-heading-Raleway">Services</h2>
+          <p class="section-p-Lato">The services that we provide</p>
 
-          <div class="service-description">
-            <div class="heart-bg">
-              <!--<img src="assets/images/heart.svg" Class="heart-img" alt="heart">-->
-              <i class="fa fa-heart fa-2x heart-img"></i>
-            </div>
-            <h3>Lorem Ipsum Dolar</h3>
-            <div class="rectangle">
+          <div class="rectangle-2">
 
-            </div>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
           </div>
 
-          <div class="service-description">
-            <div class="heart-bg">
-              <!--<img src="assets/images/heart.svg" Class="heart-img" alt="heart">-->
-              <i class="fa fa-heart fa-2x heart-img"></i>
-            </div>
-            <h3>Lorem Ipsum Dolar</h3>
-            <div class="rectangle">
+          <div class="service-descriptions">
 
+            <div class="service-description">
+              <div class="heart-bg">
+                <i class="fa fa-heart fa-2x heart-img"></i>
+              </div>
+              <h3 class="uppercase">Lorem Ipsum Dolar</h3>
+              <div class="rectangle-3">
+
+              </div>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
             </div>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
+
+            <div class="service-description">
+              <div class="heart-bg">
+                <i class="fa fa-heart fa-2x heart-img"></i>
+              </div>
+              <h3 class="uppercase">Lorem Ipsum Dolar</h3>
+              <div class="rectangle-3">
+
+              </div>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="service-description">
+              <div class="heart-bg">
+                <i class="fa fa-heart fa-2x heart-img"></i>
+              </div>
+              <h3 class="uppercase">Lorem Ipsum Dolar</h3>
+              <div class="rectangle-3">
+
+              </div>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="service-description">
+              <div class="heart-bg">
+                <i class="fa fa-heart fa-2x heart-img"></i>
+              </div>
+              <h3 class="uppercase">Lorem Ipsum Dolar</h3>
+              <div class="rectangle-3">
+
+              </div>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="service-description">
+              <div class="heart-bg">
+                <i class="fa fa-heart fa-2x heart-img"></i>
+              </div>
+              <h3 class="uppercase">Lorem Ipsum Dolar</h3>
+              <div class="rectangle-3">
+
+              </div>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="service-description">
+              <div class="heart-bg">
+                <i class="fa fa-heart fa-2x heart-img"></i>
+              </div>
+              <h3 class="uppercase">Lorem Ipsum Dolar</h3>
+              <div class="rectangle-3">
+
+              </div>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+
           </div>
-
-          <div class="service-description">
-            <div class="heart-bg">
-              <!--<img src="assets/images/heart.svg" Class="heart-img" alt="heart">-->
-              <i class="fa fa-heart fa-2x heart-img"></i>
-            </div>
-            <h3>Lorem Ipsum Dolar</h3>
-            <div class="rectangle">
-
-            </div>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-          </div>
-
-          <div class="service-description">
-            <div class="heart-bg">
-              <!--<img src="assets/images/heart.svg" Class="heart-img" alt="heart">-->
-              <i class="fa fa-heart fa-2x heart-img"></i>
-            </div>
-            <h3>Lorem Ipsum Dolar</h3>
-            <div class="rectangle">
-
-            </div>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-          </div>
-
-          <div class="service-description">
-            <div class="heart-bg">
-              <!--<img src="assets/images/heart.svg" Class="heart-img" alt="heart">-->
-              <i class="fa fa-heart fa-2x heart-img"></i>
-            </div>
-            <h3>Lorem Ipsum Dolar</h3>
-            <div class="rectangle">
-
-            </div>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-          </div>
-
-          <div class="service-description">
-            <div class="heart-bg">
-              <!--<img src="assets/images/heart.svg" Class="heart-img" alt="heart">-->
-              <i class="fa fa-heart fa-2x heart-img"></i>
-            </div>
-            <h3>Lorem Ipsum Dolar</h3>
-            <div class="rectangle">
-
-            </div>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.</p>
-          </div>
-
         </div>
       </div>
 
+      <!-- Divider Section -->
       <div class="divider">
         <div class="site-container">
           <div class="rectangle-long">
 
           </div>
-          <div class="elipse">
+          <div class="elipse-2">
 
           </div>
           <div class="rectangle-long">
@@ -404,71 +469,82 @@
 
       </div>
 
-      <div class="contact-section">
-        <div class="site-container">
-          <h2 class="uppercase contact-header">Get in touch with us</h2>
-          <p>Still have Questions? Contact Us using the Form below</p>
-          <div class="contact-info">
-            <h3>Send Us an Email</h3>
-            <form class="contact-form" action="index.html" method="post">
+      <div id="contact">
 
-              <div class="personal-details">
+        <div class="site-container">
+
+          <h2 class="section-heading-Raleway uppercase contact-header">Get in touch with us</h2>
+
+          <p class="section-p-Lato">Still have Questions? Contact Us using the Form below</p>
+
+          <div class="form-and-map">
+            <div class="form-section">
+              <div class="contact-info">
+                <h3 class="bold">Send Us an Email</h3>
+
+              <form id="contact-form" action="index.html" method="post">
+
                 <div class="name">
-                  <label for="name">Name*</label>
-                  <input type="text" id="user-Name">
+                  <label for="name" class="form-heading">Name*</label>
+                  <input type="text" id="user-Name" class="input-box" name="name">
                 </div>
 
                 <div class="email">
-                  <label for="mail">Email*</label>
-                  <input type="text" id="user-Email">
+                  <label for="mail" class="form-heading">Email*</label>
+                  <input type="text" id="user-Email" class="input-box" name="email">
                 </div>
 
                 <div class="phone">
-                  <label for="phoneNumber">Phone</label>
-                  <input type="text" id="user-Number">
+                  <label for="phoneNumber" class="form-heading">Phone</label>
+                  <input type="text" id="user-Number" class="input-box" name="phone number">
                 </div>
-              </div>
 
-              <div class="subject-section">
                 <div class="subject">
-                  <label for="subject">Subject*</label>
-                  <input type="text" id="userSubject">
+                  <label for="subject" class="form-heading">Subject*</label>
+                  <input type="text" id="user-Subject" class="input-box">
                 </div>
 
-                <div class="phone">
-                  <label for="phoneNumber">Phone</label>
-                  <select class="user-Phone" name="Select One" value="Select One">
+                <div class="phone-with-CC">
+                  <label for="phoneNumber" class="form-heading">Phone</label>
+                  <select class="user-Phone input-box" name="Select One" value="Select One">
                     <option value="Select One">Select One</option>
+                    <option value="+353">+353</option>
                   </select>
                 </div>
 
-                <div class="message-section">
-                  <div class="message">
-                    <label for="message">Message*</label>
-                    <textarea id="msg" name="user-message"></textarea>
+                <div class="msg">
+                  <label for="message" class="form-heading">Message*</label>
+                  <textarea id="msg" name="user-message" class="input-box"></textarea>
+                </div>
+
+                <div class="submit-section">
+                  <div class="submit">
+                    <button id="submit" class="submit-button bold uppercase"type="button" name="submit-btn">Send Message</button>
                   </div>
                 </div>
+
+              </form>
+
+
+
               </div>
-
-            </form>
-          </div>
-
-          <div class="map-section">
-            <div class="map">
-              <span>Map</span>
             </div>
+
+            <!-- Added in google map using google map API but only loads briefly before showing an error. I think this might be
+              an issue with billing not been enabled for the API. I added in static map embedded from google maps instead in iframe-->
+            <div class="map-section">
+              <div id="map">
+                <!-- Section to house the google map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.3653342048488!2d-8.548700084296888!3d52.67144027984313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5ec2254f8137%3A0x4e72e5aabf4362ba!2sDevEire!5e0!3m2!1sen!2sie!4v1556212977799!5m2!1sen!2sie" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+
           </div>
 
-          <div class="submit-section">
-            <div class="submit">
-              <button type="button" name="submit-btn">Send Message</button>
-            </div>
-          </div>
 
         </div>
       </div>
-
-    </body>
+    </div>
 
     <!-- Footer section of the page. Uses site-container to set page to 1440px wide -->
     <footer class="pageFooter">
@@ -506,5 +582,11 @@
 
       </div>
     </footer>
+
+    <!-- Inclusion of JavaScript scripts -->
+    <script type="text/javascript" src="assets/vendor/js/index.js"></script>
+    <!-- Google Maps API and API Key -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUJQAqW9c8wlmrqSj__06Gp9LfZI4wP5A&callback=myMap"></script>-->
+
   </body>
 </html>

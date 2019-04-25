@@ -17,6 +17,36 @@ a {
   text-decoration: none;
 }
 
+.section-heading-Raleway {
+  width: 100%;
+  font-size: 2rem;
+  font-family: Raleway;
+  text-align: center;
+  color: #444444;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-p-Lato {
+  text-align: center;
+  color: #444444;
+  font-weight: 300;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: Lato;
+}
+
+.elipse {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Using rem standard to compare all elements to the root element size */
 .site-container {
   width: 90rem;
@@ -28,6 +58,11 @@ a {
   height: 57rem;
 
 }
+
+/*
+  Header
+  Section - Banner
+*/
 
 /* CSS for Banner in Header Section */
 .PageHeader-banner {
@@ -69,6 +104,10 @@ a {
 /* Media queries to make banner section responsive */
 
 @media only screen and (max-width: 1024px) {
+  .PageHeader {
+    height: 52rem;
+  }
+
   .PageHeader-banner {
     height: 45rem;
   }
@@ -83,6 +122,10 @@ a {
 }
 
 @media only screen and (max-width: 560px) {
+  .PageHeader {
+    height: 37rem;
+  }
+
   .PageHeader-banner {
     height: 30rem;
   }
@@ -97,6 +140,11 @@ a {
   }
 }
 
+/*
+  header
+  section - logo
+*/
+
 /* CSS for Header Logo Section */
 .PageHeader-nav-section {
   display: flex;
@@ -107,12 +155,6 @@ a {
 }
 
 .PageHeader-logo {
-  /*width: 11rem;
-  border-right: 1.5px solid #DCDCDC;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;*/
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -121,6 +163,11 @@ a {
   padding-left: 0.9rem;
   padding-right: 1rem;
 }
+
+/*
+  header
+  section - Nav
+*/
 
 /* CSS for Header Nav Section */
 .PageHeader-nav {
@@ -131,7 +178,7 @@ a {
   justify-content: flex-end;
   width: 100%;
 }
-.PageHeader-nav a {
+.PageHeader-nav span a {
   text-decoration: none;
   text-align: left;
   color: #444444;
@@ -157,6 +204,7 @@ a {
   display: none;
 }
 
+/* Media Queries to set nav section for smaller screens */
 @media only screen and (max-width: 1024px) {
 
   .PageHeader-nav {
@@ -165,50 +213,417 @@ a {
 
   .PageHeader-search {
     /*display: none;*/
+  }
+
+/*  .link-team {
+    display: none;
+  }*/
+}
+
+@media only screen and (max-width: 560px) {
+
+  .PageHeader-nav-section {
     justify-content: center;
+    flex-direction: column;
+  }
+
+  .PageHeader-logo {
+    border-right: none;
+    padding-top: 1rem;
+  }
+
+
+  .PageHeader-search {
+    display: none;
+  }
+
+  .PageHeader-nav {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .mobile a {
+    text-decoration: none;
+    color: #444444;
+  }
+
+  a:hover {
+    background-color: #cccccc;
+    border-radius: 50%;
+    padding: 0.3rem;
   }
 }
+
+/*
+  Company
+  HighLights
+  Section
+*/
+
 /* CSS for Company HighLights Section*/
-
-.company-highlight-image img{
-  background-color: green;
-}
-
-
-.rectangle {
-  width: 2.5rem;
-  height: 0.1rem;
-  background-color: black;
-}
-
-.col-md-3 {
-
-}
-
-.btn {
-  color: black;
+.company-highlights-section .site-container {
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.company-highlights-section h2 {
+  padding-top: 4.5rem;
+}
+
+.company-highlights-section p {
+  padding-top: 2rem;
+}
+
+.rectangle-2 {
+  width: 2.5rem;
+  height: 1px;
+  background-color: #444444;
+  margin-top: 2.5rem;
+}
+
+.company-highlights {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 3.2rem;
+  padding-bottom: 4.3rem;
+}
+
+.company-highlight {
+  width: 22rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.company-highlight-image img {
+  background-color: #444444;
+  width: 22rem;
+  height: 14rem;
+}
+
+.company-highlight-headers .major-heading {
+  font-size: 1rem;
+  font-family: Raleway;
+  color: #333333;
+}
+
+.major-heading {
+  padding-top: 2rem;
+}
+
+.minor-heading {
+  padding-top: 1rem;
+  font-weight: 300;
+}
+
+.company-highlight-paragraph p {
+  width: 100%;
+  font-size: 1rem;
+  font-family: Lato;
   text-align: left;
 }
 
-.team {
+/* Media Queries for setting company highlight section */
+@media only screen and (max-width: 1024px) {
+  .company-highlights {
+    flex-wrap: wrap;
+  }
+
+  .company-highlight {
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  /* Same settings set in previous media query works for this size also */
+}
+
+/* CSS for rectangles in Company-highlights-2*/
+.rectangle {
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: #ffffff;
+  margin: 2.4rem auto;
+}
+
+.company-highlights-2 .site-container {
+  width: 100%;
+  background-color: #444444;
+  height: 25rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 13.2rem;
+  padding-right: 13.2rem;
+}
+
+.company-highlight-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: Raleway;
+}
+
+.company-highlight-2 h2 {
+  font-size: 3.5rem;
+}
+
+.company-highlight-2 p {
+  font-size: 1rem;
+}
+
+/* Media Queries for setting second company highlight section */
+@media only screen and (max-width: 1024px) {
+  .company-highlights-2 .site-container {
+    flex-wrap: wrap;
+
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .company-highlights-2 .site-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hours {
+    display: none;
+  }
+
+  .templates {
+    display: none;
+  }
+}
+
+/* CSS section for our work */
+#works .site-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: flex-start;
-  text-align: center;
+}
+
+#works .site-container h2 {
+  padding-top: 6.7rem;
+  padding-bottom: 2.3rem;
+  width: 100%;
+}
+
+#works .site-container p {
+  width: 100%;
+}
+
+.container {
+  padding-top: 3.1rem;
+}
+
+.piece-of-work {
+  width: 100%;
+  height: auto;
+  padding-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.piece-of-work a {
+  text-align: left;
+  padding-left: 0rem;
+}
+
+.piece-of-work h3 {
+  padding-top: 0.8rem;
+}
+
+
+/* Media Queries for setting our work section */
+@media only screen and (max-width: 1024px) {
+  .piece-of-work {
+
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  #works .site-container h2 {
+    width: 80%;
+  }
+
+  #works .site-container p {
+    width: 80%;
+  }
+
+  .piece-of-work {
+    align-items: center;
+    text-align: center;
+  }
+
+  .piece-of-work a {
+    text-align: center;
+  }
+
+  .works-2 {
+    display: none;
+  }
+
+  .works-4 {
+    display: none;
+  }
+}
+
+/* CSS section for our team section */
+#team .site-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#team h2 {
+  padding-top: 7rem;
+  padding-bottom: 2.3rem;
+
 }
 
 .team-member {
-  width: 100%;
+  width: 16.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  align-content: flex-start;
+  padding-bottom:  2.5rem;
 }
 
-/* CSS section for Services section */
+.team-member .personal-details {
+  padding-top: 2.3rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-member .personal-details h3 {
+  font-size: 1.2rem;
+  font-family: Raleway;
+  color: #333333;
+  font-style: normal;
+}
+
+.team-member .personal-details span {
+  padding-top: 0.8rem;
+  color: #1abc9c;
+  font-family: CreteRound;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.member-contact-links {
+  padding-top: 1.6rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 4.5rem;
+  padding-right: 4.4rem;
+}
+
+.member-contact-links a {
+  text-decoration: none;
+  color: #444444;
+  /* Set links to be disabled using pointer-events: none as have nowhere links */
+  pointer-events: none;
+}
+
+/* Media Queries for setting our team section */
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 560px) {
+  .team-member {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .member-contact-links {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+/* CSS for quote section */
+.quote-section {
+  width: 100%;
+  height: 15.3rem;
+  background-color: #dddddd;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.quote-section .quote {
+  font-family: Raleway;
+  font-size: 1.8rem;
+  color: #333333;
+}
+
+/* Media Queries for setting our quote section */
+@media only screen and (max-width: 1024px) {
+
+  .quote-section .quote {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  .quote-section .quote {
+    font-size: 1.4rem;
+  }
+}
+
+/* CSS for services section */
+#services .site-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#services h2 {
+  padding-top: 5.1rem;
+  padding-bottom: 2.3rem;
+
+}
+
 .heart-bg {
   width: 100px;
   height: 100px;
@@ -226,11 +641,68 @@ a {
   color: #ffffff;
 }
 
-/* CSS Section for Divider Section */
-.divider {
+.service-descriptions {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.service-description {
+  width: 11.3rem;
+  margin-right: 6.3rem;
+  margin-left: 6.3rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.service-description p {
+  width: 100%;
+  font-family: Lato;
+  font-size: 0.9rem;
+  color: #999999;
+  text-align: center;
+  padding-top: 1.8rem;
+  line-height: 1.7;
+}
+
+.rectangle-3 {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #333333;
+  margin-top: 1.6rem;
+}
+
+.service-description h3 {
+  padding-top: 2.2rem;
+  color: #444444;
+  font-weight: 800;
+}
+
+/* Media Queries for setting our services section */
+@media only screen and (max-width: 1024px) {
+  /* Everything scales well as is using FlexBox wrap */
+}
+
+@media only screen and (max-width: 560px) {
+    /* Everything scales well as is using FlexBox wrap */
+}
+
+/* CSS for Divider Section */
+.divider .site-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .rectangle-long {
@@ -239,15 +711,206 @@ a {
   background-color: #eeeeee;
 }
 
-.elipse {
+.elipse-2 {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
-  background-color: #eeeeee;
+  background-color: #dddddd;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
 }
 
-/* CSS Section for Contact Us Section */
-.contact-info {
+/* CSS for Contact US section */
+#contact .site-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#contact h2 {
+  padding-bottom: 2.3rem;
+}
+
+#contact p {
+  padding-bottom: 4.1rem;
+}
+
+.form-and-map {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+  overflow: visible;
+}
+
+.form-section {
+  width: 40%;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #444444;
+  font-family: Raleway;
+  padding-bottom: 2.5rem;
+}
+
+.form-heading {
+  color: #444444;
+  font-family: Raleway;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0.6rem;
+}
+
+.input-box {
+  margin-bottom: 2.1rem;
+}
+
+.user-Phone {
+  height: 1.6rem;
+
+}
+
+#contact-form {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 1.3rem;
+}
+
+.name {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+}
+
+.email {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+
+}
+
+.phone {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+}
+
+.phone-with-CC {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+}
+
+.subject {
+  display: flex;
+  width: 21.7rem;
+  flex-direction: column;
+  padding-right: 0.8rem;
+}
+
+.msg {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#msg {
+  height: 9.4rem;
+}
+
+.map-section {
+  width: 40%;
+  height: auto;
+}
+
+#map {
+  width: 100%;
+  border: 2px solid #cccccc;
+}
+
+#map iframe {
+  width: 100%;
+  height: 25rem;
+}
+/*#map {
+  width: 35.6rem;
+  height: 25rem;
+  background-color: #dddddd;
+}*/
+
+.submit-section {
+  width: 100%;
+
+}
+
+.submit-button {
+  width: 10.4rem;
+  height: 3.251rem;
+  background-color: #1abc9c;
+  color: #ffffff;
+  font-family: Raleway;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #20B2AA;
+}
+
+/* Media Queries for setting Contact section */
+@media only screen and (max-width: 1024px) {
+
+  .form-and-map {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+
+  .form-section {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .map-section {
+    width: 80%;
+  }
+
+  #map {
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  #contact h2 {
+    font-size: 1.6rem;
+  }
+
+  #contact p {
+    font-size: 1.2rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-section {
+    width: 70%;
+  }
 }
 
 /* CSS for Footer Section */
