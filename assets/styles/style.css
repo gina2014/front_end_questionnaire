@@ -358,6 +358,11 @@ a {
   .company-highlight {
     margin-left: 0rem;
     margin-right: 1rem;
+    width: 20rem;
+  }
+
+  .company-highlight img {
+    width: 20rem;
   }
 }
 
