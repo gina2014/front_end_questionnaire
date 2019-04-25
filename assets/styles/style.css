@@ -416,6 +416,7 @@ a {
   .company-highlights-2 .site-container {
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 90%;
   }
 
