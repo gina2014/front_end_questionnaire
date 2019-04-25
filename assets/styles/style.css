@@ -345,7 +345,6 @@ a {
 @media only screen and (max-width: 1024px) {
   .company-highlights {
     flex-wrap: wrap;
-    padding-left: 1rem;
   }
 
   .company-highlight {
