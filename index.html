@@ -4,7 +4,7 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Inclusion of BootStrap -->
     <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -377,7 +377,7 @@
 
           <div class="service-descriptions">
 
-            <div class="service-description">
+            <div class="service-description service-1">
               <div class="heart-bg">
                 <i class="fa fa-heart fa-2x heart-img"></i>
               </div>
@@ -389,7 +389,7 @@
                 consectetur adipiscing elit.</p>
             </div>
 
-            <div class="service-description">
+            <div class="service-description service-2">
               <div class="heart-bg">
                 <i class="fa fa-heart fa-2x heart-img"></i>
               </div>
@@ -401,7 +401,7 @@
                 consectetur adipiscing elit.</p>
             </div>
 
-            <div class="service-description">
+            <div class="service-description service-3">
               <div class="heart-bg">
                 <i class="fa fa-heart fa-2x heart-img"></i>
               </div>
@@ -413,7 +413,7 @@
                 consectetur adipiscing elit.</p>
             </div>
 
-            <div class="service-description">
+            <div class="service-description service-4">
               <div class="heart-bg">
                 <i class="fa fa-heart fa-2x heart-img"></i>
               </div>
@@ -425,7 +425,7 @@
                 consectetur adipiscing elit.</p>
             </div>
 
-            <div class="service-description">
+            <div class="service-description service-5">
               <div class="heart-bg">
                 <i class="fa fa-heart fa-2x heart-img"></i>
               </div>
@@ -437,7 +437,7 @@
                 consectetur adipiscing elit.</p>
             </div>
 
-            <div class="service-description">
+            <div class="service-description service-6">
               <div class="heart-bg">
                 <i class="fa fa-heart fa-2x heart-img"></i>
               </div>
@@ -469,6 +469,36 @@
 
       </div>
 
+      <div class="testimonial">
+        <div class="site-container">
+          <div class="customer-img">
+
+          </div>
+          <div class="testimonial-message">
+            <p>“<span class="non-critical">Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam
+              cum libero illo rerum!</span> Powerful Layout with Responsive functionality that
+              can be adapted to any screen size. Resize browser to view.”</p>
+          </div>
+          <div class="customer">
+            <span class="name bold uppercase">- Bob Hope</span>
+            <span class="company">XYZ Inc</span>
+          </div>
+          <div class="small-elipses">
+            <div class="small-elipse">
+
+            </div>
+            <div class="small-elipse">
+
+            </div>
+            <div class="small-elipse">
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
       <div id="contact">
 
         <div class="site-container">
@@ -482,7 +512,7 @@
               <div class="contact-info">
                 <h3 class="bold">Send Us an Email</h3>
 
-              <form id="contact-form" action="index.html" method="post">
+              <form id="contact-form" action="#" onsubmit="return validateForm()" ethod="post">
 
                 <div class="name">
                   <label for="name" class="form-heading">Name*</label>
@@ -501,7 +531,7 @@
 
                 <div class="subject">
                   <label for="subject" class="form-heading">Subject*</label>
-                  <input type="text" id="user-Subject" class="input-box">
+                  <input id="subject" type="text" name="user-Subject" class="input-box">
                 </div>
 
                 <div class="phone-with-CC">
@@ -519,13 +549,11 @@
 
                 <div class="submit-section">
                   <div class="submit">
-                    <button id="submit" class="submit-button bold uppercase"type="button" name="submit-btn">Send Message</button>
+                    <button id="submit" class="submit-button bold uppercase" type="submit" name="submit-btn" onclick="submitForm()" action="#" value="Submit">Send Message</button>
                   </div>
                 </div>
 
               </form>
-
-
 
               </div>
             </div>
