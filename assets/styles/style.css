@@ -354,6 +354,10 @@ a {
 
 @media only screen and (max-width: 560px) {
   /* Same settings set in previous media query works for this size also */
+  .company-highlights {
+    width: 90%;
+  }
+
   .company-highlight {
     margin-left: 0rem;
     margin-right: 1rem;
