@@ -345,6 +345,7 @@ a {
 @media only screen and (max-width: 1024px) {
   .company-highlights {
     flex-wrap: wrap;
+    padding-left: 1rem;
   }
 
   .company-highlight {
@@ -354,6 +355,9 @@ a {
 
 @media only screen and (max-width: 560px) {
   /* Same settings set in previous media query works for this size also */
+  .company-highlight {
+    margin-left: 0rem;
+  }
 }
 
 /* CSS for rectangles in Company-highlights-2*/
