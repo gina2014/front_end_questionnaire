@@ -13,3 +13,39 @@ $(document).ready(function() {
 });
 
 // Form submit functionality
+function submitForm() {
+  document.getElementById("contact-form").submit();
+}
+
+function validateForm() {
+  // Validate form to check if everything that is needed is filled in
+  var x = document.forms["contact-form"]["name"].value;
+  var y = document.forms["contact-form"]["email"].value;
+  var w = document.forms["contact-form"]["subject"].value;
+  var z = document.forms["contact-form"]["msg"].value;
+  var number = document.forms["contact-form"]["user-Number"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  if (w == "") {
+    alert("Subject must be filled out");
+    return false;
+  }
+  if (z == "") {
+    alert("Message must be filled out");
+    return false;
+  }
+
+  if (isNaN(number))
+  {
+    alert("Must be a phone number");
+    return false;
+  }
+
+  return true;
+}
